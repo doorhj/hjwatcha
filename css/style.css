@@ -1,0 +1,665 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Noto Sans KR';
+    color: #333333;
+}
+
+a{
+    display: block;
+}
+
+html, body {
+    min-width: 1000px;
+}
+
+/* 헤더 start */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+
+    background-color: #010003;
+}
+
+.logo{
+    margin-left: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 메뉴 start */
+
+.menu{
+    width: 60%;
+    height: 40px;
+    z-index: 99;
+}
+
+.main{
+    display: flex;
+    text-align: center;
+}
+
+.main li{
+    position: relative;
+    width: 100%;
+    line-height: 40px;
+}
+
+.main>li>a{
+    color: #f2f2f2;
+}
+
+.main li:hover>a{
+    font-weight: bold;
+    color: #FF0558;
+}
+
+.sub{
+    position: absolute;
+    width: 100%;
+    z-index: 98;
+    display: none;
+}
+
+.sub li{
+    white-space: nowrap;
+}
+
+.sub a{
+    font-size: 0.9em;
+    color: #f2f2f2;
+}
+
+.sub li:hover>a{
+    font-weight: normal;
+    color: #898A8E;
+}
+
+.bg{
+    width: 100%;
+    height: 250px;
+    top: 50px;
+    position: absolute;
+    background-color: #010003;
+    z-index: 97;
+    display: none;
+}
+
+/* 메뉴 end */
+
+.search{
+    margin-right: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+.search img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 헤더 end */
+
+.header2{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    z-index: 96;
+
+    background-color: #010003;
+}
+
+.logo_long{
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 115px;
+    height: 40px;
+}
+
+.logo_long img{
+    width: 80%;
+    height: 80%;
+}
+
+.shortcut_header{
+    margin-right: 40px;
+    width: 120px;
+    height: 30px;
+}
+
+.btn_header{
+    width: 100%;
+    height: 30px;
+    background-color: #BCBDC3;
+    border-radius: 30px;
+}
+
+.btn_header:hover{
+    background-color: #FF0558;
+    transition-duration: 0.5s;
+}
+
+.btn_header p{
+    font-size: 0.9em;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    line-height: 30px;
+}
+
+.btn_header:hover>p{
+    color: #f2f2f2;
+    transition-duration: 0.5s;
+}
+
+/* 상단 비디오 start */
+
+.s_video{
+    position: relative;
+    width: 100%;
+    height: 1080px;
+
+    background-color: #010003;
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+}
+
+.video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video_con{
+    position: absolute;
+    top: 400px;
+    left: 40px;
+    width: 800px;
+    height: 500px;
+    z-index: 3;
+    opacity: 1;
+}
+
+.logo_video{
+    width: 300px;
+    height: 120px;
+    /* background-color: #010003; */
+    margin-top: 20px;
+}
+
+.logo_video img{
+    width: 100%;
+    height: 100%;
+}
+
+.typo_video{
+    width: 540px;
+    height: 140px;
+}
+
+.typo_video img{
+    width: 100%;
+    height: 100%;
+}
+
+.text_video{
+    width: calc(100% - 40px);
+    height: 100px;
+    margin-top: 30px;
+}
+
+.text_video p{
+    font-size: 1.2em;
+    color: #f2f2f2;
+}
+
+.btn_video{
+    width: 300px;
+    height: 50px;
+    background-color: #BCBDC3;
+    border-radius: 30px;
+}
+
+.btn_video:hover{
+    background-color: #FF0558;
+    transition-duration: 0.5s;
+}
+
+.btn_video p{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    line-height: 45px;
+}
+
+.btn_video:hover>p{
+    color: #f2f2f2;
+    transition-duration: 0.5s;
+}
+
+/* 상단 비디오 end */
+
+/* 그라데이션 */
+.gra{
+    width: 100%;
+    height: 1800px;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+
+    background-color: rgb(1, 0, 3);
+    transition: background-color 0.2 ease;
+}
+
+/* con1 start */
+
+.s_con1{
+    width: 100%;
+    height: 720px;
+    background-color: #010003;
+}
+
+.con1{
+    position: absolute;
+    top: 1400px;
+    left: 40px;
+    width: 800px;
+    height: 500px;
+    z-index: 2;
+}
+
+.con1 p{
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #f2f2f2;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.con1 span{
+    line-height: 80px;
+}
+
+/* con1 end */
+
+/* con2 start */
+
+.s_con2{
+    width: 100%;
+    height: 780px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #010003;
+}
+
+.wrap_con2{
+    width: 900px;
+    height: 550px;
+    padding: 50px 0px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.con2{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 100px;
+    white-space: nowrap;
+}
+
+.con2>div{
+    border: 1px solid #898A8E;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.con2>div:hover{
+    background-color: #333333;
+    transition-duration: 0.5s;
+}
+
+.pre h3, .pre h2, .basic h3, .basic h2, .detail p{
+    color: #898A8E;
+}
+
+.con2 .active{
+    border: 1px solid #FF0558;
+    background-color: #333333;
+}
+
+.con2 .active h3, .con2 .active h2{
+    color: #FF0558;
+}
+
+.con2 .active .detail p{
+    color: #f2f2f2;
+}
+
+.pre, .basic{
+    text-align: left;
+}
+
+.detail{
+    margin-top: 20px;
+    line-height: 50px;
+}
+
+.detail p{
+    font-size: 1.3em;
+}
+
+/* con2 버튼 */
+.btn_con2{
+    width: 300px;
+    height: 50px;
+    background-color: #BCBDC3;
+    border-radius: 30px;
+    margin: 50px auto;
+}
+
+.btn_con2:hover{
+    background-color: #FF0558;
+    transition-duration: 0.5s;
+}
+
+.btn_con2 p{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    line-height: 45px;
+}
+
+.btn_con2:hover>p{
+    color: #f2f2f2;
+    transition-duration: 0.5s;
+}
+
+/* con2 end */
+
+/* slide start */
+
+.s_slide {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+    background-color: #010003;
+}
+
+.s_slide>div{
+    min-width: 1100px;
+    max-width: 1100px;
+}
+
+.silde {
+    width: 100%;
+    height: 310px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.smain {
+    display: flex;
+    width: 600%;
+    height: 100%;
+    animation: slide 30s linear infinite;
+}
+
+.slide2, .slide3 {
+    width: 100%;
+    height: 150px;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.sub2, .sub3 {
+    display: flex;
+    width: 300%;
+    height: 300px;
+    animation: slide2 30s linear infinite;
+    animation: slide3 30s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes slide2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes slide3 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.smain li, .sub2 li {
+    width: calc(100% / 12);
+    height: 100%;
+    margin-left: 30px;
+    list-style: none;
+}
+
+.sub3 li{
+    margin-right: 30px;
+}
+
+.smain img, .sub2 img, .sub3 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.smain img.enlarged, .sub2 img.enlarged, .sub3 img.enlarged {
+    transform: scale(1.1);
+}
+
+.btn_slide{
+    width: 300px;
+    height: 50px;
+    background-color: #010003;
+    border: 2px solid #f2f2f2;
+    border-radius: 30px;
+    z-index: 10;
+    margin: 50px auto;
+}
+
+.btn_slide:hover{
+    background-color: #FF0558;
+    transition-duration: 0.5s;
+}
+
+.btn_slide p{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f2f2f2;
+    text-align: center;
+    line-height: 43px;
+}
+
+/* sub slide end */
+
+/* pedia start */
+
+.s_pedia{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.icon_pedia{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.icon_pedia img{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.pedia_con{
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.pedia_text p{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.pedia_text span{
+    color: #FF0558;
+    text-decoration: underline;
+}
+
+.pedia_text a{
+    display: contents;
+}
+
+.pedia_text span:hover{
+    color: #ff3d6e;
+    transition-duration: 0.5s;
+}
+
+/* 다운로드 버튼 start */
+
+.download{
+    display: flex;
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.apple, .google{
+    width: 180px;
+    height: 50px;
+}
+
+.apple img, .google img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 다운로드 버튼 end */
+
+/* pedia end */
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+
+    background-color: #BCBDC3;
+}
+
+footer a{
+    display: contents;
+}
+
+footer>div{
+    margin-left: 40px;
+    margin-top: 25px;
+    max-width: 1100px;
+}
+
+footer ul{
+    display: flex;
+}
+
+footer li{
+    margin-right: 10px;
+}
+
+.copy{
+    display: flex;
+    align-items: center;
+}
+
+.copy img{
+    width: 90px;
+    height: 33px;
+    margin-right: 15px;
+}
+
+.sns{
+    width: 160px;
+    height: 40px;
+    position: absolute;
+    top: 260px;
+    left: 88%;
+}
+
+.snscon{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.snscon li{
+    width: 40px;
+    height: 100%;
+    border-radius: 100px;
+}
+
+.snscon img{
+    width: 80%;
+    height: 80%;
+}
+
+/* footer end */
